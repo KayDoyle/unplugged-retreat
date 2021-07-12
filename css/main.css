@@ -86,24 +86,79 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html{
+  font-size: 16px;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /*************** HEADER AND FOOTER MOBILE ***************/
 header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 
-header ul {
+header {
+  padding: 1em 0;
+}
+
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+header img{
+  width: 100%;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 header ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+.footer p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
 footer h3 {
@@ -118,6 +173,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  width: 100%;
+  margin: 0 1em 0 1em;
 }
 
 main h2, h3 {
@@ -126,9 +183,9 @@ main h2, h3 {
   align-items: center;
 }
 
-
-
-
+.features p{
+  margin: 0;
+}
 
 
 
