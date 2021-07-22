@@ -105,7 +105,7 @@ textarea {
 
    ul,
    ol {
-     font-size: 1.125;
+     font-size: 1.125em;
      text-transform: uppercase;
      font-weight: bold;
    }
@@ -179,6 +179,10 @@ main {
   background: #2a423a;
 }
 
+.reviews .content-wrapper {
+  width: 100%;
+  margin: 50px 0;
+}
 
 /*************** HEADER AND FOOTER MOBILE ***************/
 header, footer {
@@ -200,9 +204,15 @@ header .content-wrapper {
   margin: 0;
 }
 
-header img{
+header img {
   width: 100%;
-  margin: 0;
+}
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .header-divider {
@@ -311,6 +321,34 @@ main h3 {
 main p{
   margin: 0.5em;
 }
+/*********HERO AREA************/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  background-image: url('../img/hero-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+
+.hero-area h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.875em;
+  margin: 0;
+
+}
+
 
 /************* FORM************/
 
@@ -364,32 +402,40 @@ input[type=button] {
 
 /********** FEATURES ********/
 
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background: url('../img/features-img.jpg') center no-repeat;
+  background-size: cover;
+
+}
 .features .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
-
 
 
 .features article {
   width: 63%;
   margin: 30px 0;
+  padding: 0;
 }
 
 .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   margin: 0;
   padding: 0;
 }
 
 .features-items p {
   margin: 0;
+  padding: 0;
 }
 
 /******** Reviews ********/
@@ -397,10 +443,31 @@ input[type=button] {
 .reviews .content-wraper {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+.reviews img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+	width: 100%;
+}
+
+.reviews figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 1.25em;
 }
 
 .reviews h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -410,7 +477,7 @@ input[type=button] {
 }
 
 .reviews p {
-  margin-left: 1.5em;
+  margin: 1.5em;
 }
 
 /*************** FAQ STYLES****************/
@@ -433,7 +500,7 @@ section .faqs, .faq-content {
 
 .faqs h2 {
   margin-left: 0.75em;
-  padding: none;
+  padding: 0;
 }
 .faq-item h3 {
   margin-left: 1.25em;
@@ -495,7 +562,7 @@ section .faqs, .faq-content {
     /***HEADER AND FOOTER****/
     header {
       display: flex;
-      
+
     }
     }
 
