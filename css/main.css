@@ -99,9 +99,15 @@ textarea {
      font-size: 1em;
    }
 
+   main {
+     color: #e2e3ed;
+   }
+
    ul,
    ol {
-
+     font-size: 1.125;
+     text-transform: uppercase;
+     font-weight: bold;
    }
 
    a {
@@ -110,13 +116,20 @@ textarea {
 
    h2 {
      font-family: 'Poppins', sans-serif;
-     font-size: 1.876em;
+     font-size: 1.875em;
+     font-weight: 100;
+   }
+  .hero-area h2 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 2.25em;
+     font-weight: 100;
    }
 
    h3,
    h4 {
       font-family: 'Poppins', sans-serif;
       font-size: 1.125em;
+      font-weight: 100;
    }
 
    p {
@@ -153,6 +166,19 @@ textarea {
   width: 90%;
   margin: 50px 0;
 }
+
+header, footer {
+  background: #202322;
+}
+
+main {
+  background: #527158;
+}
+
+.reviews {
+  background: #2a423a;
+}
+
 
 /*************** HEADER AND FOOTER MOBILE ***************/
 header, footer {
@@ -224,6 +250,7 @@ footer h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #e2e3ed;
 }
 
 footer .contact {
@@ -236,6 +263,14 @@ footer .social {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  line-height: 1.5em;
 }
 
 footer .social-icons {
@@ -253,17 +288,39 @@ main {
   align-items: center;
   flex-flow: column wrap;
   width: 100%;
-  margin: 0 1em 0 1em;
+  margin: 0;
 }
 
-main h2, h3 {
+
+main h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0.75em;
+  padding: 0;
+}
+
+main h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5em;
+  padding: 0;
+}
+
+main p{
+  margin: 0.5em;
 }
 
 /************* FORM************/
 
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+
+}
 .form-description h3, p {
   display: flex;
   justify-content: flex-start;
@@ -278,9 +335,36 @@ main h2, h3 {
   flex-flow: column wrap;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  margin: 0;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /********** FEATURES ********/
 
-.features {
+.features .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,29 +372,29 @@ main h2, h3 {
   width: 100%;
 }
 
-.features h2 {
-  margin-bottom: 3.75em;
-}
+
 
 .features article {
   width: 63%;
   margin: 30px 0;
 }
 
-.features .features-items {
+.features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
 }
 
-.features p {
+.features-items p {
   margin: 0;
 }
 
 /******** Reviews ********/
 
-.reviews {
+.reviews .content-wraper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -322,10 +406,107 @@ main h2, h3 {
 
 .reviews h3 {
   width: 55%;
-  margin: 20px 0;
+  margin: 1.25em;
 }
 
+.reviews p {
+  margin-left: 1.5em;
+}
 
+/*************** FAQ STYLES****************/
+
+.faqs {
+  display: flex;
+}
+
+.faqs .content-wrapper {
+  margin-top: 2em;
+}
+section .faqs, .faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.faqs h2 {
+  margin-left: 0.75em;
+  padding: none;
+}
+.faq-item h3 {
+  margin-left: 1.25em;
+  padding: 0;
+}
+
+.faq-item p {
+  margin-left: 1.5em;
+}
+
+/************* ABOUT STYLES***************/
+.mission, .mission .content-wrapper, .mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 0.75em 0 0 0;
+  padding: 0;
+}
+.mission-content h2 {
+  margin-left: 0;
+  padding: 0;
+}
+
+.mission-content p {
+  margin-left: 0;
+}
+
+.contact-section {
+  background: #2a423a;
+}
+
+.contact-section h2 {
+  font-weight: 100;
+  font-size: 1.875em;
+  margin-left: 0.75em;
+}
+
+.contact-section h3 {
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1.25em;
+  }
+
+  .contact-section p {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 0 1.5em;
+    line-height: 1.5em;
+    }
+
+
+/***************************** RESPONSIVE DESIGNS******************/
+
+/*********** TABLET ***********/
+
+    @media (min-width: 768px) {
+/************TABLET HOMEPAGE*******/
+    /***HEADER AND FOOTER****/
+    header {
+      display: flex;
+      
+    }
+    }
+
+
+
+
+
+
+
+/************ DESKTOP **********/
+    @media (min-width: 1200px)
 
 
 /* ==========================================================================
